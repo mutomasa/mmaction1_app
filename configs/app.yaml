@@ -1,0 +1,8 @@
+sample_fps: 4
+clip_len: 16
+clip_interval: 2
+default_model: tsn_r50_kinetics400
+default_device: cuda
+score_threshold: 0.05
+topk: 5
+window_size: 5

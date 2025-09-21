@@ -1,0 +1,78 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Compiled extensions
+*.so
+
+# Virtual environments and uv metadata
+.venv/
+.uv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Packaging artifacts
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Test and coverage outputs
+htmlcov/
+.tox/
+.nox/
+.coverage*
+.pytest_cache/
+.hypothesis/
+.cache
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pyre/
+.pytype/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Streamlit local state
+.streamlit/
+
+# Local datasets and scratch space
+/data/
+!data/README.md
+
+# Model downloads and checkpoints
+model_store/checkpoints/
+model_store/downloads/
+model_store/**/*.log
+*.pth
+*.pt
+*.onnx
+
+# Logs and temp files
+logs/
+/tmp/
+*.log
