@@ -24,22 +24,22 @@ tests/               # pytest によるユニットテスト
 flowchart LR
     subgraph UI[Streamlit UI]
         U1[動画アップロード / モデル選択]
-        U2[設定パネル<br/>(sample FPS, Top-K, 閾値, ウィンドウ)]
+        U2["設定パネル<br/>sample FPS, Top-K, 閾値, ウィンドウ"]
         U3[推論実行ボタン]
     end
 
     subgraph Core[core/ サービス層]
-        C1[InferenceConfig<br/>構築]
-        C2[ActionRecognizer<br/>(init_recognizer)]
-        C3[inference_recognizer<br/>実行]
-        C4[coerce/topk<br/>postprocess]
-        C5[to_timeseries<br/>(平滑化・正規化)]
-        C6[render_score_plot<br/>(matplotlib)]
+        C1["InferenceConfig<br/>構築"]
+        C2["ActionRecognizer<br/>init_recognizer"]
+        C3["inference_recognizer<br/>実行"]
+        C4["coerce/topk<br/>postprocess"]
+        C5["to_timeseries<br/>平滑化・正規化"]
+        C6["render_score_plot<br/>matplotlib"]
     end
 
     subgraph Models[models/ レジストリ]
-        M1[ZOO<br/>(ModelEntry)]
-        M2[resolve_model_files<br/>(config, checkpoint)]
+        M1["ZOO<br/>ModelEntry"]
+        M2["resolve_model_files<br/>config, checkpoint"]
         M3[load_label_map]
     end
 
