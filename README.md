@@ -118,3 +118,7 @@ black .                      # 整形 (line length 100)
 - OpenMIM の config ID（`mim download` で利用）
 
 Streamlit 側ではこのレジストリを参照して推論器を初期化し、`core/` のユーティリティで Top-K 抽出やスコア平滑化、可視化を行います。
+
+## DRN ローカライザに関する補足
+
+MMAction2 には動画内のアクション区間を推定する DRN (Dense Regression Network) というローカライザが含まれますが、配布されている wheel 版には DRN 実装が同梱されていません。そのため、このリポジトリでは `mmaction.models.localizers.drn` を参照する際に例外が出ないよう、サイトパッケージへスタブモジュールを配置しています。分類モデル (TSN, SlowFast) の実行には影響しませんが、DRN 自体を利用するには MMAction2 をソースからビルドしてください。
